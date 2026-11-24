@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سَحَر | عناية بالبشرة — صفحة هبوط تجريبية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f7f1ea; --beige:#e9dccb; --sand:#d6c2a8; --brown:#8a6e52; --ink:#2f2924; --muted:#7a6f66; --white:#fffdf9;
+  --radius:22px; --shadow:0 10px 30px rgba(80,60,40,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',system-ui,sans-serif;background:var(--white);color:var(--ink);line-height:1.8}
+h1,h2,h3{font-family:'Amiri',serif;font-weight:700;line-height:1.3}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin-inline:auto}
+.btn{display:inline-block;background:var(--ink);color:var(--white);padding:14px 34px;border-radius:40px;font-weight:500;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:var(--brown)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--white)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(255,253,249,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(138,110,82,.12)}
+nav .container{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Amiri',serif;font-size:30px;letter-spacing:1px}
+.logo span{color:var(--brown)}
+nav ul{display:flex;gap:28px;list-style:none;font-size:15px}
+nav ul a{position:relative;color:var(--muted);transition:color .2s}
+nav ul a::after{content:"";position:absolute;bottom:-6px;right:0;width:0;height:1px;background:var(--brown);transition:width .3s}
+nav ul a:hover{color:var(--ink)} nav ul a:hover::after{width:100%}
+.menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--ink)}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--cream),var(--white));padding:80px 0 90px;overflow:hidden}
+.hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{color:var(--brown);letter-spacing:2px;font-size:14px;font-weight:500}
+.hero h1{font-size:clamp(38px,5vw,60px);margin:12px 0 18px}
+.hero p{color:var(--muted);font-size:18px;max-width:480px;margin-bottom:30px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-art{position:relative;height:420px}
+.blob{position:absolute;inset:30px 20px;background:var(--beige);border-radius:48% 52% 45% 55%/55% 45% 55% 45%;animation:morph 10s ease-in-out infinite}
+@keyframes morph{50%{border-radius:55% 45% 52% 48%/45% 55% 45% 55%}}
+.bottle{position:absolute;border-radius:18px 18px 26px 26px;box-shadow:var(--shadow)}
+.bottle::before{content:"";position:absolute;left:50%;transform:translateX(-50%);background:var(--ink);border-radius:6px 6px 2px 2px}
+.b1{width:120px;height:230px;bottom:60px;right:30%;background:linear-gradient(160deg,#fff,#efe4d6);animation:float 6s ease-in-out infinite}
+.b1::before{width:46px;height:44px;top:-40px}
+.b2{width:96px;height:160px;bottom:60px;right:62%;background:linear-gradient(160deg,#f3e7da,#dccab3);animation:float 6s ease-in-out infinite 1s}
+.b2::before{width:34px;height:30px;top:-28px;background:var(--brown)}
+.b3{width:130px;height:84px;bottom:60px;right:8%;border-radius:20px;background:linear-gradient(160deg,#fff,#eadccb);animation:float 6s ease-in-out infinite .5s}
+.b3::before{width:130px;height:26px;top:-22px;border-radius:14px 14px 4px 4px;background:var(--sand)}
+.label{position:absolute;inset:auto 14px 26px 14px;text-align:center;font-family:'Amiri',serif;font-size:14px;color:var(--brown)}
+@keyframes float{50%{transform:translateY(-12px)}}
+
+/* sections */
+section{padding:90px 0}
+.section-head{text-align:center;max-width:620px;margin:0 auto 50px}
+.section-head h2{font-size:clamp(30px,4vw,42px);margin:8px 0 10px}
+.section-head p{color:var(--muted)}
+
+/* products */
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:var(--cream);border-radius:var(--radius);padding:22px;transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.card .img{height:190px;border-radius:16px;background:var(--beige);display:grid;place-items:center;margin-bottom:18px;overflow:hidden}
+.card .img .mini{width:58px;height:120px;border-radius:12px 12px 18px 18px;background:linear-gradient(160deg,#fff,#eadccb);position:relative;transition:transform .4s}
+.card .img .mini::before{content:"";position:absolute;width:24px;height:22px;top:-20px;left:50%;transform:translateX(-50%);background:var(--brown);border-radius:5px}
+.card:hover .mini{transform:scale(1.08) rotate(-4deg)}
+.card h3{font-size:22px}
+.card .desc{color:var(--muted);font-size:14px;margin:4px 0 14px}
+.card .row{display:flex;align-items:center;justify-content:space-between}
+.price{font-weight:700;font-size:18px}
+.add{border:1px solid var(--ink);background:none;border-radius:30px;padding:6px 16px;font-family:inherit;cursor:pointer;transition:all .25s}
+.add:hover{background:var(--ink);color:var(--white)}
+
+/* about */
+.about{background:var(--cream)}
+.about .container{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-art{height:380px;border-radius:200px 200px var(--radius) var(--radius);background:linear-gradient(170deg,var(--beige),var(--sand))}
+.about h2{font-size:clamp(30px,4vw,42px);margin-bottom:16px}
+.about p{color:var(--muted);margin-bottom:22px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.value{background:var(--white);border-radius:16px;padding:16px;text-align:center}
+.value strong{display:block;font-family:'Amiri',serif;font-size:22px;color:var(--brown)}
+
+/* testimonials */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review{border:1px solid var(--beige);border-radius:var(--radius);padding:28px;transition:border-color .3s}
+.review:hover{border-color:var(--sand)}
+.stars{color:var(--brown);letter-spacing:3px;margin-bottom:10px}
+.review p{color:var(--muted);margin-bottom:16px}
+.review .who{font-weight:700}
+
+/* faq */
+.faq{max-width:760px;margin:auto}
+details{border-bottom:1px solid var(--beige);padding:20px 0}
+summary{cursor:pointer;list-style:none;font-weight:500;font-size:18px;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;color:var(--brown);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:10px}
+
+/* cta + footer */
+.cta{background:var(--ink);color:var(--white);text-align:center;border-radius:32px;padding:60px 24px;margin-top:20px}
+.cta h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+.cta p{color:#cbbfb2;margin-bottom:26px}
+.cta .btn{background:var(--beige);color:var(--ink)}
+footer{padding:50px 0 30px;color:var(--muted);font-size:14px}
+footer .container{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.social{display:flex;gap:12px}
+.social a{width:42px;height:42px;border-radius:50%;border:1px solid var(--beige);display:grid;place-items:center;transition:all .25s}
+.social a:hover{background:var(--ink);border-color:var(--ink)}
+.social a:hover svg{stroke:var(--white)}
+.social svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:1.8}
+.demo-note{text-align:center;font-size:12px;color:#a99d92;padding-bottom:20px}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.reveal.show{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:960px){
+  .products{grid-template-columns:repeat(2,1fr)}
+  .reviews{grid-template-columns:1fr}
+  .about .container,.hero .container{grid-template-columns:1fr}
+  .hero-art{height:320px}
+}
+@media (max-width:680px){
+  nav ul{display:none;position:absolute;top:72px;right:0;left:0;flex-direction:column;background:var(--white);padding:20px 4%;border-bottom:1px solid var(--beige)}
+  nav ul.open{display:flex}
+  .menu-btn{display:block}
+  .products{grid-template-columns:1fr}
+  .values{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .hero-art{height:280px}
+  .b1{width:90px;height:170px;right:37%}
+  .b2{width:72px;height:120px;right:68%}
+  .b3{width:96px;height:64px;right:4%}
+  .b3::before{width:96px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="logo">سَحَر<span>.</span></a>
+    <ul id="menu">
+      <li><a href="#products">المنتجات</a></li>
+      <li><a href="#about">عن البراند</a></li>
+      <li><a href="#reviews">آراء العملاء</a></li>
+      <li><a href="#faq">الأسئلة الشائعة</a></li>
+    </ul>
+    <button class="menu-btn" aria-label="القائمة" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">عناية طبيعية · مكونات نقية</div>
+      <h1>بشرتك تستحق<br>لمسة من الهدوء</h1>
+      <p>منتجات عناية بالبشرة بتركيبات لطيفة ومكونات طبيعية، مصممة لروتين يومي بسيط يعطيكِ نضارة تدوم.</p>
+      <div class="actions">
+        <a href="#products" class="btn">تسوّقي الآن</a>
+        <a href="#about" class="btn ghost">اعرفي قصتنا</a>
+      </div>
+    </div>
+    <div class="hero-art reveal" aria-hidden="true">
+      <div class="blob"></div>
+      <div class="bottle b2"><div class="label">تونر</div></div>
+      <div class="bottle b1"><div class="label">سيروم</div></div>
+      <div class="bottle b3"><div class="label">كريم</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="products">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">مجموعتنا</div>
+      <h2>روتينك في أربع خطوات</h2>
+      <p>كل منتج مصمم يكمّل التاني، من التنظيف للترطيب.</p>
+    </div>
+    <div class="products">
+      <article class="card reveal"><div class="img"><div class="mini"></div></div><h3>غسول لطيف</h3><div class="desc">بالبابونج والألوفيرا</div><div class="row"><span class="price">320 ج.م</span><button class="add">أضيفي</button></div></article>
+      <article class="card reveal"><div class="img"><div class="mini"></div></div><h3>تونر الورد</h3><div class="desc">بماء الورد الطبيعي</div><div class="row"><span class="price">280 ج.م</span><button class="add">أضيفي</button></div></article>
+      <article class="card reveal"><div class="img"><div class="mini"></div></div><h3>سيروم فيتامين C</h3><div class="desc">لنضارة وإشراقة البشرة</div><div class="row"><span class="price">450 ج.م</span><button class="add">أضيفي</button></div></article>
+      <article class="card reveal"><div class="img"><div class="mini"></div></div><h3>كريم مرطب</h3><div class="desc">بزبدة الشيا للترطيب العميق</div><div class="row"><span class="price">390 ج.م</span><button class="add">أضيفي</button></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-art reveal" aria-hidden="true"></div>
+    <div class="reveal">
+      <div class="eyebrow">قصتنا</div>
+      <h2>جمال بسيط، بمكونات تثقين فيها</h2>
+      <p>بدأنا من فكرة واحدة: إن العناية بالبشرة ما تحتاجش عشرين خطوة. اخترنا مكونات طبيعية لطيفة، واختبرنا كل تركيبة لحد ما وصلنا لروتين بسيط يناسب البشرة الحساسة قبل العادية.</p>
+      <div class="values">
+        <div class="value"><strong>100%</strong>مكونات نباتية</div>
+        <div class="value"><strong>0</strong>بارابين أو كحول</div>
+        <div class="value"><strong>4</strong>خطوات بس</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">آراء العملاء</div>
+      <h2>اللي جربوا قالوا</h2>
+      <p>أمثلة توضيحية لشكل القسم. في الموقع الحقيقي تتعرض آراء العملاء الفعلية.</p>
+    </div>
+    <div class="reviews">
+      <div class="review reveal"><div class="stars">★★★★★</div><p>"مثال على رأي عميلة: السيروم خفيف وبيتشرب بسرعة، والفرق باين بعد أسبوعين."</p><div class="who">اسم العميلة</div></div>
+      <div class="review reveal"><div class="stars">★★★★★</div><p>"مثال على رأي عميلة: أخيرًا روتين بسيط مناسب لبشرتي الحساسة."</p><div class="who">اسم العميلة</div></div>
+      <div class="review reveal"><div class="stars">★★★★☆</div><p>"مثال على رأي عميلة: الريحة هادية والتغليف شيك جدًا."</p><div class="who">اسم العميلة</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">الأسئلة الشائعة</div>
+      <h2>عندك سؤال؟</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>المنتجات مناسبة للبشرة الحساسة؟</summary><p>أيوه، كل التركيبات خالية من الكحول والعطور القوية ومناسبة للبشرة الحساسة.</p></details>
+      <details><summary>إمتى هلاحظ نتيجة؟</summary><p>أغلب العملاء بيلاحظوا فرق في النضارة والترطيب خلال أسبوعين من الاستخدام المنتظم.</p></details>
+      <details><summary>التوصيل بياخد قد إيه؟</summary><p>من يومين لأربع أيام عمل حسب المحافظة.</p></details>
+      <details><summary>أقدر أرجّع المنتج؟</summary><p>أيوه، خلال 14 يوم لو المنتج مقفول وفي حالته الأصلية.</p></details>
+    </div>
+    <div class="cta reveal">
+      <h2>ابدئي روتينك النهاردة</h2>
+      <p>خصم 10% على أول طلب.</p>
+      <a href="#products" class="btn">تسوّقي المجموعة</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="#" class="logo">سَحَر<span>.</span></a>
+    <div class="social">
+      <a href="#" aria-label="إنستجرام"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" aria-label="تيك توك"><svg viewBox="0 0 24 24"><path d="M14 3v11a3 3 0 1 1-3-3"/><path d="M14 3c.5 3 2.5 5 5 5"/></svg></a>
+      <a href="#" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1 1 8 19z"/></svg></a>
+    </div>
+    <div>© 2026 سَحَر للعناية بالبشرة</div>
+  </div>
+</footer>
+<div class="demo-note">صفحة تجريبية لبراند وهمي، معمولة كنموذج أعمال · تصميم وتنفيذ: Saif Aboalnaga</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
